@@ -1,4 +1,4 @@
-<p>
-  hand works!
-</p>
-<div>{{deck.deck_id}}</div>
+<span *ngFor="let card of hand">
+  <img [src]="card.image">
+</span>
+<div *ngIf="hand">{{ getHandValue() }}</div>
